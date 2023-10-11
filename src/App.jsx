@@ -3,7 +3,7 @@ import PokemonCard from './components/PokemonCard';
 
 function App() {
   return (
-    <div> <h1>coucou</h1>
+    <div> 
       <PokemonCard
         name="Bulbasaur"
         description="Bulbasaur is a grass-type Pokémon."
@@ -12,7 +12,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;
