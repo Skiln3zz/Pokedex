@@ -24,7 +24,7 @@ const pokemonList = [
   {
     name: "mew",
     imgSrc:
-    "mew.png",
+    "mew.png"
   },
 ];
 
@@ -39,3 +39,4 @@ const App = () => {
 };
 
 export default App;
+
