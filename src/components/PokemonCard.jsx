@@ -23,8 +23,6 @@ const pokemonList = [
   },
   {
     name: "mew",
-    imgSrc:
-    "mew.png"
   },
 ];
 
