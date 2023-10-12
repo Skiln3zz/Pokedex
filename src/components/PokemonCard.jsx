@@ -26,6 +26,15 @@ const pokemonList = [
   },
 ];
 
+const App = () => {
+  const pokemon = pokemonList[1]; 
+
+  return (
+    <div className="App">
+      <PokemonCard name={pokemon.name} imageUrl={pokemon.imgSrc} />
+    </div>
+  );
+};
 
 export default App;
 
