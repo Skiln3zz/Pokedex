@@ -1,14 +1,21 @@
 import React from 'react';
-import PokemonCard from './components/PokemonCard'; 
+import PokemonCard from './components/PokemonCard';
 
 function App() {
+  const pokemonList = [
+    {
+      name: "bulbasaur",
+      imgSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    },
+    {
+      name: "mew",
+    },
+  ];
+
   return (
-    <div> 
-      <PokemonCard
-        name="Bulbasaur"
-        description="Bulbasaur is a grass-type Pokémon."
-        imageUrl="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-      />
+    <div>
+      <PokemonCard pokemon={pokemonList[0]} />
+      <PokemonCard pokemon={pokemonList[1]} />
     </div>
   );
 }
