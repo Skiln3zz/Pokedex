@@ -12,10 +12,10 @@ function App() {
     },
   ];
 
-  return (
-    <div>
-      <PokemonCard pokemon={pokemonList[1]} />
-    </div>
+  const pokemon= pokemonList[1]
+  return (<div>
+    <PokemonCard pokemon={pokemon}/>
+  </div>
   );
 }
 
