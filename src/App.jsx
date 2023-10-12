@@ -9,7 +9,6 @@ function App() {
     },
     {
       name: "mew",
-      imgSrc: "mew.png"
     },
   ];
 
