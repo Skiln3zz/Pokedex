@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; // Importer PropTypes depuis le package prop-types
 
 const PokemonCard = (props) => {
   console.log(props);
@@ -17,6 +18,14 @@ const PokemonCard = (props) => {
   );
 };
 
+// Définir les PropTypes pour le composant PokemonCard
+PokemonCard.propTypes = {
+  pokemon: PropTypes.shape({
+    name: PropTypes.string.isRequired, // Propriété name requise de type string
+    imgSrc: PropTypes.string, // Propriété imgSrc optionnelle de type string
+  }).isRequired, // Le composant nécessite une prop pokemon
+};
+
 const App = () => {
   const pokemonList = [
     {
@@ -30,7 +39,7 @@ const App = () => {
     },
   ];
 
-  const pokemon = pokemonList[1]; 
+  const pokemon = pokemonList[1];
 
   return (
     <div className="App">
